@@ -1,0 +1,73 @@
+/* Reset */
+@import '../../node_modules/reset-css/reset.css';
+
+/* Fonts */
+@import '../../node_modules/@fontsource/koulen/index.css';
+@import '../../node_modules/roboto-fontface/css/roboto/roboto-fontface.css';
+
+/* Variables */
+:root
+	// based colors
+	--white: #FAFFFF
+	--black: #3B394B
+
+	// gray color
+	--gray-50: #ECF2F2
+	--gray-100: #DBDEDE
+	--gray-200: #B3BFC3
+	--gray-300: #8BA0A7
+
+	// red colors
+	--red-100: #FFA6A6
+	--red-200: #FF7272
+	--red-300: #E92626
+	--red-400: #950707
+
+	// green colors
+	--green-100: #A6FFBF
+	--green-200: #48FF7B
+	--green-300: #1ECB4E
+
+	// blue colors
+	--blue-100: #A8B8F2
+	--blue-200: #4F75FF
+	--blue-300: #3050C1
+
+/* Defaults */
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+
+body
+	position relative
+	min-height 100vh
+	background-color var(--gray-50)
+	font-family Roboto, sans-serif
+	font-size 18px
+	line-height: 1.25
+	color var(--black)
+	overflow hidden
+
+a
+	text-decoration none
+	color var(--black)
+
+a, input, textarea
+	background-color transparent
+	border 0
+
+	&focus
+		outline none
+
+img, svg
+	display block
+	max-width 100%
+
+button, input[type="button"]
+	border none
+	text-align center
+	line-height 1
+	letter-spacing 0.045em
+	background-color transparent
+	cursor pointer
